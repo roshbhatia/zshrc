@@ -118,12 +118,6 @@ export PATH="$HOME/.rvm/bin:$PATH"
 # 1Password completion
 eval "$(op completion zsh)"; compdef _op op
 
-# Starship prompt
-eval "$(starship init zsh)"
-
-# AWS and other tooling configurations
-export AWS_PROFILE=default
-
 # GoEnv configuration
 export GOENV_ROOT="$HOME/.goenv"
 export PATH="$GOENV_ROOT/bin:$PATH"
@@ -134,6 +128,3 @@ export PATH="$PATH:$GOPATH/bin"
 # Startup commands
 PF_ASCII="nixos" pfetch
 [[ ! -f ~/.kubecm ]] || source ~/.kubecm
-
-alias docker=podman
-export DOCKER_HOST='unix:///var/run/docker.sock'
