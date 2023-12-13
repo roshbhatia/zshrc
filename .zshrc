@@ -43,8 +43,6 @@ eval "$(direnv hook zsh)"
 
 # Kubernetes configuration
 source <(kubectl completion zsh)
-alias kubectl=kubecolor
-compdef kubecolor=kubectl
 export PATH="$HOME/.krew/bin:$PATH"
 
 # Git configuration
