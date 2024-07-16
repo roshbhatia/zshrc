@@ -128,6 +128,6 @@ alias vim="nvim"
 export EDITOR="code -w"
 
 # Startup commands
-PF_ASCII="nixos" pfetch
+macchina
 
 eval "$(starship init zsh)"
